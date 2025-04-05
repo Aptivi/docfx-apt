@@ -527,6 +527,10 @@ body .toc{
 .expand-stub {
   position: absolute;
   left: -10px;
+  font-weight: bold;
+}
+.expand-stub + a {
+  font-weight: bold;
 }
 .toc .nav > li > a.sidetoc-expand {
   position: absolute;
@@ -868,7 +872,7 @@ footer {
   .toc .level1 > li {
     display: block;
   }
-  
+
   .toc .level1 > li:after {
     display: none;
   }
@@ -1067,7 +1071,7 @@ div.embeddedvideo iframe {
 /* Color theme */
 
 /* These are not important, tune down **/
-.decalaration, .fieldValue, .parameters, .returns {
+.declaration, .fieldValue, .parameters, .returns {
   color: #a2a2a2;
 }
 
@@ -1075,4 +1079,10 @@ div.embeddedvideo iframe {
 #fields, #properties, #methods, #events {
     font-weight: bold;
     margin-top: 2em;
+}
+
+@media print {
+  @page {
+    margin: .4in;
+  }
 }
