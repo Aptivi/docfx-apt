@@ -27,7 +27,7 @@
 </div>
 {{#parameters.0}}
 <h5>Parameters</h5>
-<table class="table table-bordered table-striped">
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Name</th>
@@ -64,7 +64,7 @@
 {{#responses.0}}
 <div class="responses">
   <h5>Responses</h5>
-  <table class="table table-bordered table-striped">
+  <table class="table table-bordered">
     <thead>
       <tr>
         <th>Status Code</th>

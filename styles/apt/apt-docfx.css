@@ -99,15 +99,13 @@ span.languagekeyword{
 }
 .table {
   margin-bottom: 10px;
+  background-color: #150033;
 }
 table p {
   margin-bottom: 0;
 }
 table a {
   display: inline-block;
-}
-.table-striped>tbody>tr:nth-of-type(odd) {
-  background-color: #150033;
 }
 
 /* Make hidden attribute compatible with old browser.*/
@@ -762,7 +760,7 @@ footer {
   z-index: 1000;
 }
 .footer {
-  background-color: #150033;
+  background-color: black;
   padding: 15px 0;
 }
 @media (min-width: 768px) {

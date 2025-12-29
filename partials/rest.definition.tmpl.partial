@@ -5,7 +5,7 @@
 <div class="markdown level1 description">{{{description}}}</div>
 {{/description}}
 {{#properties.0}}
-<table class="table table-bordered table-striped">
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>Name</th>
