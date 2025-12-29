@@ -184,6 +184,8 @@ header {
 header .navbar {
   border-width: 0 0 1px;
   border-radius: 0;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 .navbar-brand {
   font-size: inherit;
