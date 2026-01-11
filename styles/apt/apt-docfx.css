@@ -488,7 +488,7 @@ body .toc{
   left: 0;
 }
 .toc .nav > li > a {
-  color: #666666;
+  color: var(--apt-accent-2);
   margin-left: 5px;
   display: block;
   padding: 0;
@@ -500,11 +500,11 @@ body .toc{
   text-decoration: inherit;
 }
 .toc .nav > li.active > a {
-  color: var(--apt-accent-shade-3);
+  color: var(--apt-accent-shade-5);
 }
 .toc .nav > li.active > a:hover,
 .toc .nav > li.active > a:focus {
-  color: var(--apt-accent-1);
+  color: var(--apt-accent-shade-5);
 }
 
 .toc .nav > li> .expand-stub {
@@ -571,7 +571,7 @@ body .toc{
 pre {
   border-radius: 5px !important;
   border: solid !important;
-  border-color: #6700FF !important;
+  border-color: var(--apt-accent-1) !important;
   border-width: 2px !important;
   border-radius: 1em !important;
   background: var(--apt-accent-shade-3);
@@ -583,14 +583,14 @@ pre {
   border-width: 2px;
   border-radius: 1em !important;
   background: var(--apt-accent-shade-3);
-  color: #666666;
+  color: var(--apt-accent-2);
   padding: 5px;
   position: relative;
   margin: 0 5px 0 5px;
 }
 .toc-filter > input {
   border: 0;
-  color: #666666;
+  color: var(--apt-accent-2);
   background: var(--apt-accent-shade-3);
   padding-left: 20px;
   padding-right: 20px;
@@ -676,7 +676,7 @@ pre {
 }
 .affix ul > li > a:hover {
   background: none;
-  color: #666666;
+  color: var(--apt-accent-2);
 }
 .affix ul > li.active > a,
 .affix ul > li.active > a:before {
@@ -684,7 +684,7 @@ pre {
 }
 .affix ul > li > a {
   padding: 5px 12px;
-  color: #666666;
+  color: var(--apt-accent-2);
 }
 .affix > ul > li.active:last-child {
   margin-bottom: 50px;
@@ -817,7 +817,7 @@ footer {
     margin-left: -3px;
     margin-right: 5px;
     content: ", ";
-    color: #666666;
+    color: var(--apt-accent-2);
   }
   .toc .level1 > li {
     display: block;
