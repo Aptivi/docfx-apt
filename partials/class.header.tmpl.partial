@@ -42,8 +42,8 @@
 {{#inheritedMembers.0}}
 </div>
 {{/inheritedMembers.0}}
-<h6><strong>{{__global.namespace}}</strong>: {{{namespace.specName.0.value}}}</h6>
-<h6><strong>{{__global.assembly}}</strong>: {{assemblies.0}}.dll</h6>
+<h6>{{__global.namespace}}: {{{namespace.specName.0.value}}}</h6>
+<h6>{{__global.assembly}}: {{assemblies.0}}.dll</h6>
 <h5 id="{{id}}_syntax">{{__global.syntax}}</h5>
 <div class="codewrapper">
   <pre><code class="lang-csharp hljs">{{syntax.content.0.value}}</code></pre>
@@ -110,11 +110,11 @@
 </table>
 {{/syntax.typeParameters.0}}
 {{#remarks}}
-<h5 id="{{id}}_remarks"><strong>{{__global.remarks}}</strong></h5>
+<h5 id="{{id}}_remarks">{{__global.remarks}}</h5>
 <div class="markdown level0 remarks">{{{remarks}}}</div>
 {{/remarks}}
 {{#example.0}}
-<h5 id="{{id}}_examples"><strong>{{__global.examples}}</strong></h5>
+<h5 id="{{id}}_examples">{{__global.examples}}</h5>
 {{/example.0}}
 {{#example}}
 {{{.}}}

@@ -32,17 +32,17 @@
 </div>
 {{/inheritedMembers.0}}
 {{#namespace.0}}
-<h6><strong>{{__global.namespace}}</strong>: {{{value.specName.0.value}}}</h6>
+<h6>{{__global.namespace}}: {{{value.specName.0.value}}}</h6>
 {{/namespace.0}}
 {{#package.0}}
-<h6><strong>{{__global.package}}</strong>: {{{value.specName.0.value}}}</h6>
+<h6>{{__global.package}}: {{{value.specName.0.value}}}</h6>
 {{/package.0}}
 {{#remarks}}
-<h5 id="{{id}}_remarks"><strong>{{__global.remarks}}</strong></h5>
+<h5 id="{{id}}_remarks">{{__global.remarks}}</h5>
 <div class="markdown level0 remarks">{{{remarks}}}</div>
 {{/remarks}}
 {{#example.0}}
-<h5 id="{{id}}_examples"><strong>{{__global.examples}}</strong></h5>
+<h5 id="{{id}}_examples">{{__global.examples}}</h5>
 {{/example.0}}
 {{#example}}
 {{{.}}}

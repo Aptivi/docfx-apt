@@ -4,7 +4,7 @@
 <div class="markdown level0 summary">{{{summary}}}</div>
 <div class="markdown level0 conceptual">{{{conceptual}}}</div>
 {{#package.0}}
-<h6><strong>{{__global.package}}</strong>: {{{value.specName.0.value}}}</h6>
+<h6>{{__global.package}}: {{{value.specName.0.value}}}</h6>
 {{/package.0}}
 <div class="markdown level0 remarks">{{{remarks}}}</div>
 {{#children}}
