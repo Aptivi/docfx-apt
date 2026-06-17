@@ -537,6 +537,7 @@ $(function () {
           }
 
           $(e).breakWord();
+          $(e).addClass("spacing_tab");
         });
 
         renderSidebar();

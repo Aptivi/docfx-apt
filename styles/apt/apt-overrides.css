@@ -4,7 +4,7 @@
 
 .btn-primary, .btn:disabled, .btn, .form-control, .form-text {
     color: var(--apt-accent-2);
-    background-color: var(--apt-accent-shade-3);
+    background-color: var(--apt-accent-back);
     border-color: var(--apt-accent-1);
     border-width: var(--apt-styling-border-width);
     border-radius: var(--apt-styling-border-radius);
@@ -27,7 +27,7 @@
 
     .form-control:focus {
         color: var(--apt-accent-2);
-        background-color: var(--apt-accent-shade-3);
+        background-color: var(--apt-accent-back);
         box-shadow: var(--apt-accent-1-shadow) 0px 0px 0px 0.25rem;
         border-color: var(--apt-accent-1);
         outline: 0px;
