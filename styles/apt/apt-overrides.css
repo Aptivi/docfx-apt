@@ -164,8 +164,8 @@
 
 .container {
     width: unset;
-    padding-left: 16rem;
-    padding-right: 16rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 
 @media (max-width: 770px) {

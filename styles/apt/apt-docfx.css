@@ -23,7 +23,7 @@ h6 mark {
 .inheritance .level7:before,
 .inheritance .level8:before,
 .inheritance .level9:before {
-    content: '↳';
+    content: '->';
     margin-right: 5px;
 }
 
@@ -69,10 +69,6 @@ h6 mark {
 
 .level0.summary {
   margin: 2em 0 2em 0;
-}
-
-.level1.summary {
-  margin: 1em 0 1em 0;
 }
 
 span.parametername,
@@ -169,9 +165,6 @@ h6,
   margin: 0 5px;
   color: #cccccc;
 }
-hr {
-  border-color: #cccccc;
-}
 header {
   position: fixed;
   top: 0;
@@ -194,11 +187,6 @@ header .navbar {
 }
 .subnav {
   min-height: 40px;
-}
-
-.inheritance h5, .inheritedMembers h5{
-  padding-bottom: 5px;
-  border-bottom: 1px solid #ccc;
 }
 
 article h1, article h2, article h3, article h4{
@@ -1020,7 +1008,7 @@ div.embeddedvideo iframe {
 
 /* These are not important, tune down **/
 .declaration, .fieldValue, .parameters, .returns {
-  color: #a2a2a2;
+  color: var(--apt-accent-1);
 }
 
 /* Major sections, increase visibility **/
@@ -1037,4 +1025,30 @@ div.embeddedvideo iframe {
 
 .spacing_tab {
   margin-bottom: 1rem;
+}
+
+.apt_docgen_push {
+  margin-left: 4rem;
+}
+
+.apt_docgen_push_2 {
+  margin-left: 2rem;
+}
+
+@media (max-width: 770px) {
+    .apt_docgen_push {
+        margin-left: 15px;
+    }
+
+    .apt_docgen_push_2 {
+      margin-left: 15px;
+    }
+}
+
+.apt_docgen_mono {
+  font-family: var(--apt-font-style-mono);
+}
+
+.apt_docgen_sans {
+  font-family: var(--apt-font-style-sans);
 }
