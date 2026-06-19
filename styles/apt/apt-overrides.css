@@ -139,11 +139,13 @@
     --bs-table-active-bg: var(--apt-accent-shade-3);
     --bs-table-hover-color: var(--apt-accent-2);
     --bs-table-hover-bg: var(--apt-accent-shade-3);
-    width: 97.73%;
+    width: unset;
     margin-bottom: 1rem;
     vertical-align: top;
     border-color: var(--apt-accent-1);
     border-width: var(--apt-styling-border-width);
+    border-radius: var(--apt-styling-border-radius) !important;
+    border-collapse: separate;
 }
 
 @media (min-width: 770px) {

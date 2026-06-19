@@ -451,7 +451,7 @@ article section {
   border: solid;
   border-color: var(--apt-accent-1);
   border-width: 2px;
-  border-radius: 1em !important;
+  border-radius: var(--apt-styling-border-radius) !important;
 }
 
 .fixed_header {
@@ -590,31 +590,28 @@ a:hover, a:focus,
   top: 90px;
   width: 260px;
   background-color: var(--apt-accent-back);
-  padding: 15px;
+  padding-top: 15px;
   z-index: 1;
 }
 .form-control {
-  border-radius: 5px;
+  border-radius: var(--apt-styling-border-radius) !important;
   border: solid;
   border-color: var(--apt-accent-1);
   border-width: 2px;
-  border-radius: 1em !important;
   background: var(--apt-accent-back);
 }
 pre {
-  border-radius: 5px !important;
+  border-radius: var(--apt-styling-border-radius) !important;
   border: solid !important;
   border-color: var(--apt-accent-1) !important;
   border-width: 2px !important;
-  border-radius: 1em !important;
   background: var(--apt-accent-back);
 }
 .toc-filter {
-  border-radius: 5px;
+  border-radius: var(--apt-styling-border-radius) !important;
   border: solid;
   border-color: var(--apt-accent-1);
   border-width: 2px;
-  border-radius: 1em !important;
   background: var(--apt-accent-back);
   color: var(--apt-accent-2);
   padding: 5px;
