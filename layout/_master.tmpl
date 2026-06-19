@@ -1,43 +1,48 @@
 {{!Licensed to the .NET Foundation under one or more agreements. The .NET Foundation licenses this file to you under the MIT license.}}
+
 {{!include(/^styles/.*/)}}
 {{!include(/^fonts/.*/)}}
 {{!include(favicon.ico)}}
 {{!include(logo.svg)}}
 {{!include(search-stopwords.json)}}
+
 <!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html {{#_lang}}lang="{{_lang}}"{{/_lang}}>
   {{>partials/head}}
+
   {{^redirect_url}}
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header class="apt-head translucency-rule-black">
-        {{^_disableNavbar}}
-        {{>partials/navbar}}
-        {{/_disableNavbar}}
-      </header>
-      {{#_enableSearch}}
-      <div class="container body-content">
-        {{>partials/searchResults}}
-      </div>
-      {{/_enableSearch}}
-      <div role="main" class="container body-content hide-when-search">
-      {{^_disableToc}}
-        {{>partials/toc}}
+    <body data-spy="scroll" data-target="#affix" data-offset="120">
+      <div id="wrapper">
+        <header class="apt-head translucency-rule-black">
+          {{^_disableNavbar}}
+            {{>partials/navbar}}
+          {{/_disableNavbar}}
+        </header>
+
+        {{#_enableSearch}}
+          <div class="container body-content">
+            {{>partials/searchResults}}
+          </div>
+        {{/_enableSearch}}
+
+        <div role="main" class="container body-content hide-when-search">
+        
         <div class="article row grid-right">
-      {{/_disableToc}}
-      {{#_disableToc}}
-        <div class="article row grid">
-        {{/_disableToc}}
           <div class="col-md-12">
             <article class="content wrap" id="_content" data-uid="{{uid}}">
                 {{!body}}
             </article>
           </div>
         </div>
+        {{^_disableToc}}
+          {{>partials/toc}}
+        {{/_disableToc}}
+        {{#_disableToc}}
+          {{>partials/sites}}
+        {{/_disableToc}}
+        </div>
       </div>
-    </div>
-    {{>partials/scripts}}
-  </body>
+      {{>partials/scripts}}
+    </body>
   {{/redirect_url}}
 </html>

@@ -27,6 +27,8 @@
     <meta property="docfx:navrel" content="{{_navRel}}">
     <meta property="docfx:tocrel" content="{{_tocRel}}">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     {{#_noindex}}<meta name="searchOption" content="noindex">{{/_noindex}}
     {{#_enableSearch}}<meta property="docfx:rel" content="{{_rel}}">{{/_enableSearch}}
     {{#_enableNewTab}}<meta property="docfx:newtab" content="true">{{/_enableNewTab}}

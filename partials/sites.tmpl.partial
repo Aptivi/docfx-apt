@@ -1,0 +1,79 @@
+{{!Licensed to the .NET Foundation under one or more agreements. The .NET Foundation licenses this file to you under the MIT license.}}
+
+<div class="sidenav hide-when-search">
+  <ul class="sidefilter no_padding_ul">
+    <h4>About</h4>
+    <p class="apt_docgen_push_2">Copyright © 2014-2026 Aptivi</p>
+
+    <h4>Contact us</h4>
+    <li class="apt_docgen_push_2" style="display: inline-block;">
+        <a href="https://aptivi.github.io" rel="me" aria-label="Aptivi Website" title="Aptivi Website">
+          <i class="fa-solid fa-globe" aria-hidden="true">
+          </i>
+        </a>&nbsp;
+    </li>
+
+    <li style="display: inline-block;">
+        <a href="https://officialaptivi.com" rel="me" aria-label="Aptivi Blog" title="Aptivi Blog">
+          <i class="fa fa-blog" aria-hidden="true">
+          </i>
+        </a>&nbsp;
+    </li>
+
+    <li style="display: inline-block;">
+        <a href="https://officialaptivi.wordpress.com" rel="me" aria-label="Aptivi Blog (alt link)" title="Aptivi Blog (alt link)">
+          <i class="fa fa-blog" aria-hidden="true">
+          </i>
+        </a>&nbsp;
+    </li>
+
+    <li style="display: inline-block;">
+        <a href="https://github.com/Aptivi" rel="me" aria-label="Aptivi GitHub" title="Aptivi GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true">
+          </i>
+        </a>&nbsp;
+    </li>
+
+    <li style="display: inline-block;">
+        <a href="https://gitlab.com/Aptivi" rel="me" aria-label="Aptivi GitLab" title="Aptivi GitLab">
+          <i class="fa-brands fa-gitlab" aria-hidden="true">
+          </i>
+        </a>&nbsp;
+    </li>
+
+    <li style="display: inline-block;">
+        <a href="https://aptivi.gitbook.io" rel="me" aria-label="Aptivi Manual" title="Aptivi Manual">
+          <i class="fa-solid fa-book" aria-hidden="true">
+          </i>
+        </a>&nbsp;
+    </li>
+
+    <li style="display: inline-block;">
+        <a href="https://x.com/OfficialAptivi" rel="me" aria-label="X (Twitter)" title="X (Twitter)">
+          <i class="fa-brands fa-twitter" aria-hidden="true">
+          </i>
+        </a>&nbsp;
+    </li>
+
+    <li style="display: inline-block;">
+        <a href="https://bsky.app/profile/aptivi.bsky.social" rel="me" aria-label="Bluesky" title="Bluesky">
+          <i class="fa-brands fa-bluesky" aria-hidden="true">
+          </i>
+        </a>&nbsp;
+    </li>
+
+    <li style="display: inline-block;">
+        <a href="https://mastodon.social/@official_aptivi" rel="me" aria-label="Mastodon" title="Mastodon">
+          <i class="fa-brands fa-mastodon" aria-hidden="true">
+          </i>
+        </a>&nbsp;
+    </li>
+
+    <li style="display: inline-block;">
+        <a href="https://tumblr.com/aptivi" rel="me" aria-label="Tumblr" title="Tumblr">
+          <i class="fa-brands fa-tumblr" aria-hidden="true">
+          </i>
+        </a>&nbsp;
+    </li>
+  </ul>
+</div>
