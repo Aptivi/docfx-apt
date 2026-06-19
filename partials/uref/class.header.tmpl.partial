@@ -1,8 +1,8 @@
 {{!Licensed to the .NET Foundation under one or more agreements. The .NET Foundation licenses this file to you under the MIT license.}}
 
 <h1 id="{{id}}" data-uid="{{uid}}">{{>partials/title}}</h1>
-<div class="markdown level0 summary">{{{summary}}}</div>
-<div class="markdown level0 conceptual">{{{conceptual}}}</div>
+<div class="markdown level0 summary apt_docgen_push_2">{{{summary}}}</div>
+<div class="markdown level0 conceptual apt_docgen_push_2">{{{conceptual}}}</div>
 {{#inheritance.0}}
 <div class="inheritance">
   <h5>{{__global.inheritance}}</h5>

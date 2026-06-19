@@ -1,8 +1,8 @@
 {{!Licensed to the .NET Foundation under one or more agreements. The .NET Foundation licenses this file to you under the MIT license.}}
 
 <h1 id="{{id}}" data-uid="{{uid}}" class="text-break">{{>partials/title}}</h1>
-<div class="markdown level0 summary">{{{summary}}}</div>
-<div class="markdown level0 conceptual">{{{conceptual}}}</div>
+<div class="markdown level0 summary apt_docgen_push_2">{{{summary}}}</div>
+<div class="markdown level0 conceptual apt_docgen_push_2">{{{conceptual}}}</div>
 {{#package.0}}
 <h6>{{__global.package}}: {{{value.specName.0.value}}}</h6>
 {{/package.0}}
@@ -32,8 +32,8 @@
       <a id="{{id}}" data-uid="{{uid}}"></a>
       {{/overload}}
       <h4 id="{{id}}" data-uid="{{uid}}">{{name.0.value}}</h4>
-      <div class="markdown level1 summary">{{{summary}}}</div>
-      <div class="markdown level1 conceptual">{{{conceptual}}}</div>
+      <div class="markdown level1 summary apt_docgen_push">{{{summary}}}</div>
+      <div class="markdown level1 conceptual apt_docgen_push">{{{conceptual}}}</div>
       <h5 class="declaration">{{__global.declaration}}</h5>
       {{#syntax}}
       <div class="codewrapper">
@@ -41,7 +41,7 @@
       </div>
       {{#parameters.0}}
       <h5 class="parameters">{{__global.parameters}}</h5>
-      <table class="table table-bordered">
+      <table class="table table-bordered apt_docgen_push_2">
         <thead>
           <tr>
             <th>{{__global.type}}</th>
@@ -53,8 +53,8 @@
       {{/parameters.0}}
       {{#parameters}}
           <tr>
-            <td>{{{type.specName.0.value}}}</td>
-            <td><em>{{{id}}}</em></td>
+            <td class="apt_docgen_mono">{{{type.specName.0.value}}}</td>
+            <td class="apt_docgen_mono"><em>{{{id}}}</em></td>
             <td>
               {{{description}}}
               {{>partials/uref/parameters}}
@@ -67,7 +67,7 @@
       {{/parameters.0}}
       {{#return}}
       <h5 class="returns">{{__global.returns}}</h5>
-      <table class="table table-bordered">
+      <table class="table table-bordered apt_docgen_push_2">
         <thead>
           <tr>
             <th>{{__global.type}}</th>
@@ -76,7 +76,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>{{{value.type.0.specName.0.value}}}</td>
+            <td class="apt_docgen_mono">{{{value.type.0.specName.0.value}}}</td>
             <td>{{{value.description}}}</td>
           </tr>
         </tbody>
@@ -84,7 +84,7 @@
       {{/return}}
       {{#typeParameters.0}}
       <h5 class="typeParameters">{{__global.typeParameters}}</h5>
-      <table class="table table-bordered">
+      <table class="table table-bordered apt_docgen_push_2">
         <thead>
           <tr>
             <th>{{__global.name}}</th>
@@ -95,7 +95,7 @@
       {{/typeParameters.0}}
       {{#typeParameters}}
           <tr>
-            <td><em>{{{id}}}</em></td>
+            <td class="apt_docgen_mono"><em>{{{id}}}</em></td>
             <td>{{{description}}}</td>
           </tr>
       {{/typeParameters}}
@@ -105,7 +105,7 @@
       {{/typeParameters.0}}
       {{#fieldValue}}
       <h5 class="fieldValue">{{__global.fieldValue}}</h5>
-      <table class="table table-bordered">
+      <table class="table table-bordered apt_docgen_push_2">
         <thead>
           <tr>
             <th>{{__global.type}}</th>
@@ -114,7 +114,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>{{{value.type.0.specName.0.value}}}</td>
+            <td class="apt_docgen_mono">{{{value.type.0.specName.0.value}}}</td>
             <td>{{{value.description}}}</td>
           </tr>
         </tbody>
@@ -122,7 +122,7 @@
       {{/fieldValue}}
       {{#propertyValue}}
       <h5 class="propertyValue">{{__global.propertyValue}}</h5>
-      <table class="table table-bordered">
+      <table class="table table-bordered apt_docgen_push_2">
         <thead>
           <tr>
             <th>{{__global.type}}</th>
@@ -131,7 +131,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>{{{value.type.0.specName.0.value}}}</td>
+            <td class="apt_docgen_mono">{{{value.type.0.specName.0.value}}}</td>
             <td>{{{value.description}}}</td>
           </tr>
         </tbody>
@@ -139,7 +139,7 @@
       {{/propertyValue}}
       {{#eventType}}
       <h5 class="eventType">{{__global.eventType}}</h5>
-      <table class="table table-bordered">
+      <table class="table table-bordered apt_docgen_push_2">
         <thead>
           <tr>
             <th>{{__global.type}}</th>
@@ -148,7 +148,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>{{{type.specName.0.value}}}</td>
+            <td class="apt_docgen_mono">{{{type.specName.0.value}}}</td>
             <td>{{{description}}}</td>
           </tr>
         </tbody>
@@ -157,22 +157,22 @@
       {{/syntax}}
       {{#overridden}}
       <h5 class="overrides">{{__global.overrides}}</h5>
-      <div><xref href="{{uid}}" altProperty="fullName" displayProperty="nameWithType"/></div>
+      <div class="apt_docgen_mono apt_docgen_push_2"><xref href="{{uid}}" altProperty="fullName" displayProperty="nameWithType"/></div>
       {{/overridden}}
       {{#implements.0}}
       <h5 class="implements">{{__global.implements}}</h5>
       {{/implements.0}}
       {{#implements}}
         {{#definition}}
-          <div><xref href="{{definition}}" altProperty="fullName" displayProperty="nameWithType"/></div>
+          <div class="apt_docgen_mono apt_docgen_push_2"><xref href="{{definition}}" altProperty="fullName" displayProperty="nameWithType"/></div>
         {{/definition}}
         {{^definition}}
-          <div><xref href="{{uid}}" altProperty="fullName" displayProperty="nameWithType"/></div>
+          <div class="apt_docgen_mono apt_docgen_push_2"><xref href="{{uid}}" altProperty="fullName" displayProperty="nameWithType"/></div>
         {{/definition}}
       {{/implements}}
       {{#remarks}}
       <h5 id="{{id}}_remarks">{{__global.remarks}}</h5>
-      <div class="markdown level1 remarks">{{{remarks}}}</div>
+      <div class="markdown level1 remarks apt_docgen_mono apt_docgen_push_2">{{{remarks}}}</div>
       {{/remarks}}
       {{#example.0}}
       <h5 id="{{id}}_examples">{{__global.examples}}</h5>
@@ -182,7 +182,7 @@
       {{/example}}
       {{#exceptions.0}}
       <h5 class="exceptions">{{__global.exceptions}}</h5>
-      <table class="table table-bordered">
+      <table class="table table-bordered apt_docgen_push_2">
         <thead>
           <tr>
             <th>{{__global.type}}</th>
@@ -193,7 +193,7 @@
       {{/exceptions.0}}
       {{#exceptions.0.value}}
           <tr>
-            <td>{{{type.specName.0.value}}}</td>
+            <td class="apt_docgen_mono">{{{type.specName.0.value}}}</td>
             <td>{{{description}}}</td>
           </tr>
       {{/exceptions.0.value}}
@@ -203,7 +203,7 @@
       {{/exceptions.0}}
       {{#seealso.0}}
       <h5 id="{{id}}_seealso">{{__global.seealso}}</h5>
-      <div class="seealso">
+      <div class="seealso apt_docgen_push_2 apt_docgen_mono">
       {{/seealso.0}}
       {{#seealso}}
         {{#isCref}}

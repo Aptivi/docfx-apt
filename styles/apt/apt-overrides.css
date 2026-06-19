@@ -139,7 +139,7 @@
     --bs-table-active-bg: var(--apt-accent-shade-3);
     --bs-table-hover-color: var(--apt-accent-2);
     --bs-table-hover-bg: var(--apt-accent-shade-3);
-    width: 100%;
+    width: 97.73%;
     margin-bottom: 1rem;
     vertical-align: top;
     border-color: var(--apt-accent-1);
@@ -154,6 +154,7 @@
 
 .hljs {
     color: var(--apt-accent-2);
+    padding: 0 !important;
 }
 
 .container-header {
@@ -164,8 +165,8 @@
 
 .container {
     width: unset;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 @media (max-width: 770px) {

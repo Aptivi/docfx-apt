@@ -19,7 +19,6 @@ $(function () {
   renderNavbar();
   renderSidebar();
   renderAffix();
-  renderFooter();
   renderLogo();
 
   breakText();
@@ -383,9 +382,6 @@ $(function () {
       loadToc();
     } else {
       registerTocEvents();
-      if ($('footer').is(':visible')) {
-        $('.sidetoc').addClass('shiftup');
-      }
 
       // Scroll to active item
       var top = 0;
@@ -397,10 +393,6 @@ $(function () {
         top += $(e).position().top;
       })
       $('.sidetoc').scrollTop(top - 50);
-
-      if ($('footer').is(':visible')) {
-        $('.sidetoc').addClass('shiftup');
-      }
 
       renderBreadcrumb();
     }
@@ -676,48 +668,6 @@ $(function () {
       if (!str) return str;
       return str
         .replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "\\$&");
-    }
-  }
-
-  // Show footer
-  function renderFooter() {
-    initFooter();
-    $(window).on("scroll", showFooterCore);
-
-    function initFooter() {
-      if (needFooter()) {
-        shiftUpBottomCss();
-        $("footer").show();
-      } else {
-        resetBottomCss();
-        $("footer").hide();
-      }
-    }
-
-    function showFooterCore() {
-      if (needFooter()) {
-        shiftUpBottomCss();
-        $("footer").fadeIn();
-      } else {
-        resetBottomCss();
-        $("footer").fadeOut();
-      }
-    }
-
-    function needFooter() {
-      var scrollHeight = $(document).height();
-      var scrollPosition = $(window).height() + $(window).scrollTop();
-      return (scrollHeight - scrollPosition) < 1;
-    }
-
-    function resetBottomCss() {
-      $(".sidetoc").removeClass("shiftup");
-      $(".sideaffix").removeClass("shiftup");
-    }
-
-    function shiftUpBottomCss() {
-      $(".sidetoc").addClass("shiftup");
-      $(".sideaffix").addClass("shiftup");
     }
   }
 

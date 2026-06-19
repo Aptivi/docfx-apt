@@ -1,8 +1,8 @@
 {{!Licensed to the .NET Foundation under one or more agreements. The .NET Foundation licenses this file to you under the MIT license.}}
 
 <h1 id="{{id}}" data-uid="{{uid}}" class="text-break">{{>partials/title}}</h1>
-<div class="markdown level0 summary">{{{summary}}}</div>
-<div class="markdown level0 conceptual">{{{conceptual}}}</div>
+<div class="markdown level0 summary apt_docgen_push_2">{{{summary}}}</div>
+<div class="markdown level0 conceptual apt_docgen_push_2">{{{conceptual}}}</div>
 {{#inClass}}
 <div class="inheritance">
   <h5>{{__global.inheritance}}</h5>
@@ -52,7 +52,7 @@
 </div>
 {{#syntax.parameters.0}}
 <h5 class="parameters">{{__global.parameters}}</h5>
-<table class="table table-bordered">
+<table class="table table-bordered apt_docgen_push_2">
   <thead>
     <tr>
       <th>{{__global.type}}</th>
@@ -75,7 +75,7 @@
 {{/syntax.parameters.0}}
 {{#syntax.return}}
 <h5 class="returns">{{__global.returns}}</h5>
-<table class="table table-bordered">
+<table class="table table-bordered apt_docgen_push_2">
   <thead>
     <tr>
       <th>{{__global.type}}</th>
@@ -92,7 +92,7 @@
 {{/syntax.return}}
 {{#syntax.typeParameters.0}}
 <h5 class="typeParameters">{{__global.typeParameters}}</h5>
-<table class="table table-bordered">
+<table class="table table-bordered apt_docgen_push_2">
   <thead>
     <tr>
       <th>{{__global.name}}</th>
