@@ -143,8 +143,14 @@ h6,
   background-color: transparent;
   border: none;
 }
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+.navbar-inverse .navbar-nav>.active>a {
   background-color: transparent;
+  color: var(--apt-accent-shade-5);
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: transparent;
+  color: var(--apt-accent-1);
 }
 #wrapper {
   min-height: 100%;
@@ -547,18 +553,20 @@ body .toc{
   display: block;
   padding: 0;
 }
-a:hover, a:focus,
 .toc .nav > li > a:hover,
-.toc .nav > li > a:focus {
+.toc .nav > li > a:focus,
+.toc .nav > li.active > a:hover,
+.toc .nav > li.active > a:focus {
+  color: var(--apt-accent-1);
+  background: none;
+  text-decoration: inherit;
+}
+a:hover, a:focus {
   color: var(--apt-accent-2);
   background: none;
   text-decoration: inherit;
 }
 .toc .nav > li.active > a {
-  color: var(--apt-accent-shade-5);
-}
-.toc .nav > li.active > a:hover,
-.toc .nav > li.active > a:focus {
   color: var(--apt-accent-shade-5);
 }
 
@@ -1143,4 +1151,8 @@ div.embeddedvideo iframe {
   border-color: unset;
   border-top: unset;
   box-shadow: unset;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: var(--apt-accent-2);
 }

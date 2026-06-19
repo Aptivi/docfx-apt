@@ -2,7 +2,8 @@
 
 <div class="sidenav hide-when-search">
   <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">{{__global.tocToggleButton}}</a>
-  <div class="sidetoggle collapse" id="sidetoggle">
+  <div class="sidetoggle collapse no_padding_ul" id="sidetoggle">
+    <h4>Table of contents</h4>
     <div id="sidetoc"></div>
   </div>
 </div>
