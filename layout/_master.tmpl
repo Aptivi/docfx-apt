@@ -27,19 +27,21 @@
 
         <div role="main" class="container body-content hide-when-search">
         
-        <div class="article row grid-right">
-          <div class="col-md-12">
+        <div class="article row grid apt_docgen_dynaflex">
+          <div class="col-md-12" style="width: 100%;">
             <article class="content wrap" id="_content" data-uid="{{uid}}">
                 {{!body}}
             </article>
           </div>
+          <div class="col-md-12" style="width: unset; margin-top: 20px;">
+            {{^_disableToc}}
+              {{>partials/toc}}
+            {{/_disableToc}}
+            {{#_disableToc}}
+              {{>partials/sites}}
+            {{/_disableToc}}
+          </div>
         </div>
-        {{^_disableToc}}
-          {{>partials/toc}}
-        {{/_disableToc}}
-        {{#_disableToc}}
-          {{>partials/sites}}
-        {{/_disableToc}}
         </div>
       </div>
       {{>partials/scripts}}
