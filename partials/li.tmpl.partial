@@ -7,12 +7,14 @@
         {{^leaf}}
           <span class="expand-stub"></span>
         {{/leaf}}
+
         {{#topicHref}}
           <a href="{{topicHref}}" name="{{tocHref}}" title="{{name}}">{{name}}</a>
         {{/topicHref}}
         {{^topicHref}}
           <a>{{{name}}}</a>
         {{/topicHref}}
+
         {{^leaf}}
           {{>partials/li}}
         {{/leaf}}

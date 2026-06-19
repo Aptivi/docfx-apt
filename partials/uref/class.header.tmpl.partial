@@ -3,49 +3,55 @@
 <h1 id="{{id}}" data-uid="{{uid}}">{{>partials/title}}</h1>
 <div class="markdown level0 summary apt_docgen_push_2">{{{summary}}}</div>
 <div class="markdown level0 conceptual apt_docgen_push_2">{{{conceptual}}}</div>
+
 {{#inheritance.0}}
-<div class="inheritance">
-  <h5>{{__global.inheritance}}</h5>
-  <div class="apt_docgen_push_2">
+  <div class="inheritance">
+    <h5>{{__global.inheritance}}</h5>
+    <div class="apt_docgen_push_2">
 {{/inheritance.0}}
 {{#inheritance.0.value}}
-    {{>partials/uref/inheritance}}
+      {{>partials/uref/inheritance}}
 {{/inheritance.0.value}}
 {{#inheritance.0}}
-    <div class="level{{level}} apt_docgen_mono"><span class="xref">{{name.0.value}}</span></div>
+      <div class="level{{level}} apt_docgen_mono"><span class="xref">{{name.0.value}}</span></div>
+    </div>
   </div>
-</div>
 {{/inheritance.0}}
+
 {{#inheritedMembers.0}}
-<div class="inheritedMembers">
-  <h5>{{__global.inheritedMembers}}</h5>
+  <div class="inheritedMembers">
+    <h5>{{__global.inheritedMembers}}</h5>
 {{/inheritedMembers.0}}
 {{#inheritedMembers}}
-  <div>
-  {{#definition}}
-    <xref uid="{{definition}}" altProperty="fullName" displayProperty="name"/>
-  {{/definition}}
-  {{^definition}}
-    <xref uid="{{uid}}" altProperty="fullName" displayProperty="name"/>
-  {{/definition}}
-  </div>
+    <div>
+    {{#definition}}
+      <xref uid="{{definition}}" altProperty="fullName" displayProperty="name"/>
+    {{/definition}}
+    {{^definition}}
+      <xref uid="{{uid}}" altProperty="fullName" displayProperty="name"/>
+    {{/definition}}
+    </div>
 {{/inheritedMembers}}
 {{#inheritedMembers.0}}
-</div>
+  </div>
 {{/inheritedMembers.0}}
+
 {{#namespace.0}}
-<h6>{{__global.namespace}}: {{{value.specName.0.value}}}</h6>
+  <h6>{{__global.namespace}}: {{{value.specName.0.value}}}</h6>
 {{/namespace.0}}
+
 {{#package.0}}
-<h6>{{__global.package}}: {{{value.specName.0.value}}}</h6>
+  <h6>{{__global.package}}: {{{value.specName.0.value}}}</h6>
 {{/package.0}}
+
 {{#remarks}}
-<h5 id="{{id}}_remarks">{{__global.remarks}}</h5>
-<div class="markdown level0 remarks">{{{remarks}}}</div>
+  <h5 id="{{id}}_remarks">{{__global.remarks}}</h5>
+  <div class="markdown level0 remarks">{{{remarks}}}</div>
 {{/remarks}}
+
 {{#example.0}}
-<h5 id="{{id}}_examples">{{__global.examples}}</h5>
+  <h5 id="{{id}}_examples">{{__global.examples}}</h5>
 {{/example.0}}
 {{#example}}
-{{{.}}}
+  {{{.}}}
 {{/example}}

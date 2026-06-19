@@ -1,28 +1,31 @@
 {{!Licensed to the .NET Foundation under one or more agreements. The .NET Foundation licenses this file to you under the MIT license.}}
 
 {{>partials/class.header}}
+
 {{#children}}
-<h3 id="{{id}}">{{>partials/classSubtitle}}</h3>
-<table class="table table-bordered apt_docgen_push_2">
-  <thead>
-    <tr>
-      <th>{{__global.name}}</th>
-      <th>{{__global.description}}</th>
-    </tr>
-  <thead>
-  <tbody>
-  {{#children}}
-    <tr>
-      <td class="apt_docgen_mono" id="{{id}}">{{name.0.value}}</td>
-      <td>{{{summary}}}</td>
-    </tr>
-  {{/children}}
-  </tbody>
-</table>
+  <h3 id="{{id}}">{{>partials/classSubtitle}}</h3>
+  <table class="table table-bordered apt_docgen_push_2">
+    <thead>
+      <tr>
+        <th>{{__global.name}}</th>
+        <th>{{__global.description}}</th>
+      </tr>
+    <thead>
+    <tbody>
+
+    {{#children}}
+      <tr>
+        <td class="apt_docgen_mono" id="{{id}}">{{name.0.value}}</td>
+        <td>{{{summary}}}</td>
+      </tr>
+    {{/children}}
+    </tbody>
+  </table>
 {{/children}}
+
 {{#seealso.0}}
-<h5 id="{{id}}_seealso">{{__global.seealso}}</h5>
-<div class="seealso apt_docgen_push_2 apt_docgen_mono">
+  <h5 id="{{id}}_seealso">{{__global.seealso}}</h5>
+  <div class="seealso apt_docgen_push_2 apt_docgen_mono">
 {{/seealso.0}}
 {{#seealso}}
   {{#isCref}}
@@ -33,18 +36,19 @@
   {{/isCref}}
 {{/seealso}}
 {{#seealso.0}}
-</div>
+  </div>
 {{/seealso.0}}
+
 {{#extensionMethods.0}}
-<h3 id="extensionmethods">{{__global.extensionMethods}}</h3>
+  <h3 id="extensionmethods">{{__global.extensionMethods}}</h3>
 {{/extensionMethods.0}}
 {{#extensionMethods}}
-<div class="apt_docgen_push_2 apt_docgen_mono">
-  {{#definition}}
-    <xref uid="{{definition}}" fullName="{{fullName.0.value}}" name="{{nameWithType.0.value}}"/>
-  {{/definition}}
-  {{^definition}}
-    <xref uid="{{uid}}" fullName="{{fullName.0.value}}" name="{{nameWithType.0.value}}"/>
-  {{/definition}}
-</div>
+  <div class="apt_docgen_push_2 apt_docgen_mono">
+    {{#definition}}
+      <xref uid="{{definition}}" fullName="{{fullName.0.value}}" name="{{nameWithType.0.value}}"/>
+    {{/definition}}
+    {{^definition}}
+      <xref uid="{{uid}}" fullName="{{fullName.0.value}}" name="{{nameWithType.0.value}}"/>
+    {{/definition}}
+  </div>
 {{/extensionMethods}}

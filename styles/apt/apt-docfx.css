@@ -13,6 +13,12 @@ h6 mark {
   padding: 0;
 }
 
+mark, .mark {
+    padding: unset;
+    background-color: var(--apt-accent-shade-3);
+    color: var(--apt-accent-shade-5);
+}
+
 .inheritance .level0:before,
 .inheritance .level1:before,
 .inheritance .level2:before,
@@ -347,7 +353,9 @@ article section {
 
 #search-results>.search-list {
   text-align: center;
-  font-size: 2.5rem;
+  color: var(--apt-accent-1);
+  font-size: 3rem;
+  font-family: var(--apt-font-style-head);
   margin-bottom: 50px;
 }
 
@@ -402,7 +410,7 @@ article section {
 }
 
 .pagination>.active>a {
-  background-color: var(--apt-accent-back) !important;
+  background-color: var(--apt-accent-shade-3) !important;
   border-color: var(--apt-accent-back) !important;
 }
 

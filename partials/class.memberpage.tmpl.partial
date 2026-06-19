@@ -1,51 +1,56 @@
 {{!Licensed to the .NET Foundation under one or more agreements. The .NET Foundation licenses this file to you under the MIT license.}}
 
 {{>partials/class.header}}
+
 {{#children}}
-<br></br>
-<h3 id="{{id}}">{{>partials/classSubtitle}}</h3>
-{{#overload}}
-<a id="{{id}}" data-uid="{{uid}}"></a>
-{{/overload}}
-{{#children.0}}
-<table class="table table-bordered apt_docgen_push_2">
-  <thead>
-    <tr>
-      <th>{{__global.name}}</th>
-      <th>{{__global.description}}</th>
-    </tr>
-  </thead>
-  <tbody>
-  {{/children.0}}
-    {{#children}}
-    <tr>
-      <td id="{{id}}" data-uid="{{uid}}">
-        <xref uid="{{uid}}" altProperty="fullName" displayProperty="name"/>
-      </td>
-      <td class="markdown level1 summary">{{{summary}}}</td>
-    </tr>
-    {{/children}}
+  <br></br>
+  <h3 id="{{id}}">{{>partials/classSubtitle}}</h3>
+
+  {{#overload}}
+    <a id="{{id}}" data-uid="{{uid}}"></a>
+  {{/overload}}
+
   {{#children.0}}
-  </tbody>
-</table>
-{{/children.0}}
+    <table class="table table-bordered apt_docgen_push_2">
+      <thead>
+        <tr>
+          <th>{{__global.name}}</th>
+          <th>{{__global.description}}</th>
+        </tr>
+      </thead>
+      <tbody>
+  {{/children.0}}
+  {{#children}}
+        <tr>
+          <td id="{{id}}" data-uid="{{uid}}">
+            <xref uid="{{uid}}" altProperty="fullName" displayProperty="name"/>
+          </td>
+          <td class="markdown level1 summary">{{{summary}}}</td>
+        </tr>
+  {{/children}}
+  {{#children.0}}
+      </tbody>
+    </table>
+  {{/children.0}}
 {{/children}}
+
 {{#extensionMethods.0}}
-<h3 id="extensionmethods">{{__global.extensionMethods}}</h3>
+  <h3 id="extensionmethods">{{__global.extensionMethods}}</h3>
 {{/extensionMethods.0}}
 {{#extensionMethods}}
-<div class="apt_docgen_push_2 apt_docgen_mono">
-  {{#definition}}
-    <xref uid="{{definition}}" altProperty="fullName" displayProperty="nameWithType"/>
-  {{/definition}}
-  {{^definition}}
-    <xref uid="{{uid}}" altProperty="fullName" displayProperty="nameWithType"/>
-  {{/definition}}
-</div>
+  <div class="apt_docgen_push_2 apt_docgen_mono">
+    {{#definition}}
+      <xref uid="{{definition}}" altProperty="fullName" displayProperty="nameWithType"/>
+    {{/definition}}
+    {{^definition}}
+      <xref uid="{{uid}}" altProperty="fullName" displayProperty="nameWithType"/>
+    {{/definition}}
+  </div>
 {{/extensionMethods}}
+
 {{#seealso.0}}
-<h3 id="seealso">{{__global.seealso}}</h3>
-<div class="seealso apt_docgen_push_2">
+  <h3 id="seealso">{{__global.seealso}}</h3>
+  <div class="seealso apt_docgen_push_2">
 {{/seealso.0}}
 {{#seealso}}
   {{#isCref}}
@@ -56,5 +61,5 @@
   {{/isCref}}
 {{/seealso}}
 {{#seealso.0}}
-</div>
+  </div>
 {{/seealso.0}}

@@ -18,7 +18,6 @@ $(function () {
   renderLinks();
   renderNavbar();
   renderSidebar();
-  renderAffix();
   renderLogo();
 
   breakText();
@@ -33,7 +32,6 @@ $(function () {
     highlight();
     renderTables();
     renderAlerts();
-    renderAffix();
     renderTabs();
   }
 
@@ -554,121 +552,6 @@ $(function () {
 
     var html = util.formList(breadcrumb, 'breadcrumb');
     $('#breadcrumb').html(html);
-  }
-
-  //Setup Affix
-  function renderAffix() {
-    var hierarchy = getHierarchy();
-    if (!hierarchy || hierarchy.length <= 0) {
-      $("#affix").hide();
-    }
-    else {
-      var html = util.formList(hierarchy, ['nav', 'bs-docs-sidenav']);
-      $("#affix>div").empty().append(html);
-      if ($('footer').is(':visible')) {
-        $(".sideaffix").css("bottom", "70px");
-      }
-      $('#affix a').click(function(e) {
-        var scrollspy = $('[data-spy="scroll"]').data()['bs.scrollspy'];
-        var target = e.target.hash;
-        if (scrollspy && target) {
-          scrollspy.activate(target);
-        }
-      });
-    }
-
-    function getHierarchy() {
-      // supported headers are h1, h2, h3, and h4
-      var $headers = $($.map(['h1', 'h2', 'h3', 'h4'], function (h) { return ".article article " + h; }).join(", "));
-
-      // a stack of hierarchy items that are currently being built
-      var stack = [];
-      $headers.each(function (i, e) {
-        if (!e.id) {
-          return;
-        }
-
-        var item = {
-          name: htmlEncode($(e).text()),
-          href: "#" + e.id,
-          items: []
-        };
-
-        if (!stack.length) {
-          stack.push({ type: e.tagName, siblings: [item] });
-          return;
-        }
-
-        var frame = stack[stack.length - 1];
-        if (e.tagName === frame.type) {
-          frame.siblings.push(item);
-        } else if (e.tagName[1] > frame.type[1]) {
-          // we are looking at a child of the last element of frame.siblings.
-          // push a frame onto the stack. After we've finished building this item's children,
-          // we'll attach it as a child of the last element
-          stack.push({ type: e.tagName, siblings: [item] });
-        } else {  // e.tagName[1] < frame.type[1]
-          // we are looking at a sibling of an ancestor of the current item.
-          // pop frames from the stack, building items as we go, until we reach the correct level at which to attach this item.
-          while (e.tagName[1] < stack[stack.length - 1].type[1]) {
-            buildParent();
-          }
-          if (e.tagName === stack[stack.length - 1].type) {
-            stack[stack.length - 1].siblings.push(item);
-          } else {
-            stack.push({ type: e.tagName, siblings: [item] });
-          }
-        }
-      });
-      while (stack.length > 1) {
-        buildParent();
-      }
-
-      function buildParent() {
-        var childrenToAttach = stack.pop();
-        var parentFrame = stack[stack.length - 1];
-        var parent = parentFrame.siblings[parentFrame.siblings.length - 1];
-        $.each(childrenToAttach.siblings, function (i, child) {
-          parent.items.push(child);
-        });
-      }
-      if (stack.length > 0) {
-
-        var topLevel = stack.pop().siblings;
-        if (topLevel.length === 1) {  // if there's only one topmost header, dump it
-          return topLevel[0].items;
-        }
-        return topLevel;
-      }
-      return undefined;
-    }
-
-    function htmlEncode(str) {
-      if (!str) return str;
-      return str
-        .replace(/&/g, '&amp;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;');
-    }
-
-    function htmlDecode(value) {
-      if (!str) return str;
-      return value
-        .replace(/&quot;/g, '"')
-        .replace(/&#39;/g, "'")
-        .replace(/&lt;/g, '<')
-        .replace(/&gt;/g, '>')
-        .replace(/&amp;/g, '&');
-    }
-
-    function cssEscape(str) {
-      // see: http://stackoverflow.com/questions/2786538/need-to-escape-a-special-character-in-a-jquery-selector-string#answer-2837646
-      if (!str) return str;
-      return str
-        .replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "\\$&");
-    }
   }
 
   function renderLogo() {

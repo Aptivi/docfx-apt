@@ -5,193 +5,192 @@
 <div class="markdown level0 conceptual apt_docgen_push_2">{{{conceptual}}}</div>
 
 {{#children}}
-{{#children}}
-{{#overload}}
-<a id="{{id}}" data-uid="{{uid}}"></a>
-{{/overload}}
-<h4 id="{{id}}" data-uid="{{uid}}" class="apt_docgen_push_2">{{name.0.value}}</h4>
-<div class="markdown level1 summary apt_docgen_push">{{{summary}}}</div>
-<div class="markdown level1 conceptual apt_docgen_push">{{{conceptual}}}</div>
-<div class="apt_docgen_push">
-<h5 class="declaration">{{__global.declaration}}</h5>
-{{#syntax}}
-{{#remarks}}
-<h5 id="{{id}}_remarks">{{__global.remarks}}</h5>
-<div class="markdown level1 remarks">{{{remarks}}}</div>
-{{/remarks}}
-{{#fieldValue}}
-<h5 id="{{id}}_fieldValue">{{__global.fieldValue}}</h5>
-<div class="markdown level1 apt_docgen_mono apt_docgen_push_2">{{{type.specName.0.value}}}<div class="markdown level1 remarks apt_docgen_push_2 apt_docgen_sans">{{{description}}}</div></div>
-{{/fieldValue}}
-{{#propertyValue}}
-<h5 id="{{id}}_remarks">{{__global.propertyValue}}</h5>
-<div class="markdown level1 apt_docgen_mono apt_docgen_push_2">{{{type.specName.0.value}}}<div class="markdown level1 remarks apt_docgen_push_2 apt_docgen_sans">{{{description}}}</div></div>
-{{/propertyValue}}
-{{#return}}
-<h5 id="returns">{{__global.returns}}</h5>
-<div class="markdown level1 apt_docgen_mono apt_docgen_push_2">{{{type.specName.0.value}}}<div class="markdown level1 remarks apt_docgen_push_2 apt_docgen_sans">{{{description}}}</div></div>
-{{/return}}
-<h5 class="declaration">{{__global.declaration}}</h5>
-<div class="codewrapper apt_docgen_push_2">
-  <pre><code class="lang-csharp hljs">{{syntax.content.0.value}}</code></pre>
-</div>
-{{#parameters.0}}
-<h5 class="parameters">{{__global.parameters}}</h5>
-<table class="table table-bordered apt_docgen_push_2">
-  <thead>
-    <tr>
-      <th>{{__global.type}}</th>
-      <th>{{__global.name}}</th>
-      <th>{{__global.description}}</th>
-    </tr>
-  </thead>
-  <tbody>
-{{/parameters.0}}
-{{#parameters}}
-    <tr>
-      <td class="apt_docgen_mono">{{{type.specName.0.value}}}</td>
-      <td class="apt_docgen_mono"><span class="parametername">{{{id}}}</span></td>
-      <td>{{{description}}}</td>
-    </tr>
-{{/parameters}}
-{{#parameters.0}}
-  </tbody>
-</table>
-{{/parameters.0}}
-{{#typeParameters.0}}
-<h5 class="typeParameters">{{__global.typeParameters}}</h5>
-<table class="table table-bordered apt_docgen_push_2">
-  <thead>
-    <tr>
-      <th>{{__global.name}}</th>
-      <th>{{__global.description}}</th>
-    </tr>
-  </thead>
-  <tbody>
-{{/typeParameters.0}}
-{{#typeParameters}}
-    <tr>
-      <td class="apt_docgen_mono"><span class="parametername">{{{id}}}</span></td>
-      <td>{{{description}}}</td>
-    </tr>
-{{/typeParameters}}
-{{#typeParameters.0}}
-  </tbody>
-</table>
-{{/typeParameters.0}}
-{{#fieldValue}}
-<h5 class="fieldValue">{{__global.fieldValue}}</h5>
-<table class="table table-bordered apt_docgen_push_2">
-  <thead>
-    <tr>
-      <th>{{__global.type}}</th>
-      <th>{{__global.description}}</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="apt_docgen_mono">{{{type.specName.0.value}}}</td>
-      <td>{{{description}}}</td>
-    </tr>
-  </tbody>
-</table>
-{{/fieldValue}}
-{{#eventType}}
-<h5 class="eventType">{{__global.eventType}}</h5>
-<table class="table table-bordered apt_docgen_push_2">
-  <thead>
-    <tr>
-      <th>{{__global.type}}</th>
-      <th>{{__global.description}}</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="apt_docgen_mono">{{{type.specName.0.value}}}</td>
-      <td>{{{description}}}</td>
-    </tr>
-  </tbody>
-</table>
-{{/eventType}}
-{{/syntax}}
-{{#overridden}}
-<h5 class="overrides">{{__global.overrides}}</h5>
-<div class="apt_docgen_push_2 apt_docgen_mono"><xref uid="{{uid}}" altProperty="fullName" displayProperty="nameWithType"/></div>
-{{/overridden}}
-{{#example.0}}
-<h5 id="{{id}}_examples">{{__global.examples}}</h5>
-{{/example.0}}
-{{#example}}
-{{{.}}}
-{{/example}}
-{{#exceptions.0}}
-<h5 class="exceptions">{{__global.exceptions}}</h5>
-<table class="table table-bordered apt_docgen_push_2">
-  <thead>
-    <tr>
-      <th>{{__global.type}}</th>
-      <th>{{__global.condition}}</th>
-    </tr>
-  </thead>
-  <tbody>
-{{/exceptions.0}}
-{{#exceptions}}
-    <tr>
-      <td class="apt_docgen_mono">{{{type.specName.0.value}}}</td>
-      <td>{{{description}}}</td>
-    </tr>
-{{/exceptions}}
-{{#exceptions.0}}
-  </tbody>
-</table>
-{{/exceptions.0}}
-{{#seealso.0}}
-<h5 id="{{id}}_seealso">{{__global.seealso}}</h5>
-<div class="seealso apt_docgen_push_2 apt_docgen_mono">
-{{/seealso.0}}
-{{#seealso}}
-  {{#isCref}}
-    <div>{{{type.specName.0.value}}}</div>
-  {{/isCref}}
-  {{^isCref}}
-    <div>{{{url}}}</div>
-  {{/isCref}}
-{{/seealso}}
-{{#seealso.0}}
-</div>
-{{/seealso.0}}
-</div>
+  {{#children}}
+    {{#overload}}
+      <a id="{{id}}" data-uid="{{uid}}"></a>
+    {{/overload}}
+
+    <h4 id="{{id}}" data-uid="{{uid}}" class="apt_docgen_push_2">{{name.0.value}}</h4>
+    <div class="markdown level1 summary apt_docgen_push">{{{summary}}}</div>
+    <div class="markdown level1 conceptual apt_docgen_push">{{{conceptual}}}</div>
+    <div class="apt_docgen_push">
+
+    {{#syntax}}
+      {{#remarks}}
+        <h5 id="{{id}}_remarks">{{__global.remarks}}</h5>
+        <div class="markdown level1 remarks">{{{remarks}}}</div>
+      {{/remarks}}
+
+      {{#fieldValue}}
+        <h5 id="{{id}}_fieldValue">{{__global.fieldValue}}</h5>
+        <div class="markdown level1 apt_docgen_mono apt_docgen_push_2">{{{type.specName.0.value}}}<div class="markdown level1 remarks apt_docgen_push_2 apt_docgen_sans">{{{description}}}</div></div>
+      {{/fieldValue}}
+
+      {{#propertyValue}}
+        <h5 id="{{id}}_remarks">{{__global.propertyValue}}</h5>
+        <div class="markdown level1 apt_docgen_mono apt_docgen_push_2">{{{type.specName.0.value}}}<div class="markdown level1 remarks apt_docgen_push_2 apt_docgen_sans">{{{description}}}</div></div>
+      {{/propertyValue}}
+
+      {{#return}}
+        <h5 id="returns">{{__global.returns}}</h5>
+        <div class="markdown level1 apt_docgen_mono apt_docgen_push_2">{{{type.specName.0.value}}}<div class="markdown level1 remarks apt_docgen_push_2 apt_docgen_sans">{{{description}}}</div></div>
+      {{/return}}
+
+      <h5 class="declaration">{{__global.declaration}}</h5>
+      <div class="codewrapper apt_docgen_push_2">
+        <pre><code class="lang-csharp hljs">{{syntax.content.0.value}}</code></pre>
+      </div>
+
+      {{#parameters.0}}
+        <h5 class="parameters">{{__global.parameters}}</h5>
+        <table class="table table-bordered apt_docgen_push_2">
+          <thead>
+            <tr>
+              <th>{{__global.name}}</th>
+              <th>{{__global.type}}</th>
+              <th>{{__global.description}}</th>
+            </tr>
+          </thead>
+          <tbody>
+      {{/parameters.0}}
+      {{#parameters}}
+            <tr>
+              <td class="apt_docgen_mono"><span class="parametername">{{{id}}}</span></td>
+              <td class="apt_docgen_mono">{{{type.specName.0.value}}}</td>
+              <td>{{{description}}}</td>
+            </tr>
+      {{/parameters}}
+      {{#parameters.0}}
+          </tbody>
+        </table>
+      {{/parameters.0}}
+
+      {{#typeParameters.0}}
+        <h5 class="typeParameters">{{__global.typeParameters}}</h5>
+        <table class="table table-bordered apt_docgen_push_2">
+          <thead>
+            <tr>
+              <th>{{__global.name}}</th>
+              <th>{{__global.description}}</th>
+            </tr>
+          </thead>
+          <tbody>
+      {{/typeParameters.0}}
+      {{#typeParameters}}
+            <tr>
+              <td class="apt_docgen_mono"><span class="parametername">{{{id}}}</span></td>
+              <td>{{{description}}}</td>
+            </tr>
+      {{/typeParameters}}
+      {{#typeParameters.0}}
+          </tbody>
+        </table>
+      {{/typeParameters.0}}
+
+      {{#eventType}}
+        <h5 class="eventType">{{__global.eventType}}</h5>
+        <table class="table table-bordered apt_docgen_push_2">
+          <thead>
+            <tr>
+              <th>{{__global.type}}</th>
+              <th>{{__global.description}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="apt_docgen_mono">{{{type.specName.0.value}}}</td>
+              <td>{{{description}}}</td>
+            </tr>
+          </tbody>
+        </table>
+      {{/eventType}}
+    {{/syntax}}
+
+  {{#overridden}}
+    <h5 class="overrides">{{__global.overrides}}</h5>
+    <div class="apt_docgen_push_2 apt_docgen_mono"><xref uid="{{uid}}" altProperty="fullName" displayProperty="nameWithType"/></div>
+  {{/overridden}}
+
+  {{#example.0}}
+    <h5 id="{{id}}_examples">{{__global.examples}}</h5>
+  {{/example.0}}
+  {{#example}}
+    {{{.}}}
+  {{/example}}
+
+  {{#exceptions.0}}
+    <h5 class="exceptions">{{__global.exceptions}}</h5>
+    <table class="table table-bordered apt_docgen_push_2">
+      <thead>
+        <tr>
+          <th>{{__global.type}}</th>
+          <th>{{__global.condition}}</th>
+        </tr>
+      </thead>
+      <tbody>
+  {{/exceptions.0}}
+  {{#exceptions}}
+        <tr>
+          <td class="apt_docgen_mono">{{{type.specName.0.value}}}</td>
+          <td>{{{description}}}</td>
+        </tr>
+  {{/exceptions}}
+  {{#exceptions.0}}
+      </tbody>
+    </table>
+  {{/exceptions.0}}
+
+  {{#seealso.0}}
+    <h5 id="{{id}}_seealso">{{__global.seealso}}</h5>
+    <div class="seealso apt_docgen_push_2 apt_docgen_mono">
+  {{/seealso.0}}
+  {{#seealso}}
+    {{#isCref}}
+      <div>{{{type.specName.0.value}}}</div>
+    {{/isCref}}
+    {{^isCref}}
+      <div>{{{url}}}</div>
+    {{/isCref}}
+  {{/seealso}}
+  {{#seealso.0}}
+    </div>
+  {{/seealso.0}}
+
+  </div>
+  {{/children}}
 {{/children}}
-{{/children}}
+
 {{#implements.0}}
-<h3 id="implements">{{__global.implements}}</h3>
+  <h3 id="implements">{{__global.implements}}</h3>
 {{/implements.0}}
 {{#implements}}
-<div class="apt_docgen_push_2 apt_docgen_mono">
-  {{#definition}}
-    <xref uid="{{definition}}" altProperty="fullName" displayProperty="nameWithType"/>
-  {{/definition}}
-  {{^definition}}
-    <xref uid="{{uid}}" altProperty="fullName" displayProperty="nameWithType"/>
-  {{/definition}}
-</div>
+  <div class="apt_docgen_push_2 apt_docgen_mono">
+    {{#definition}}
+      <xref uid="{{definition}}" altProperty="fullName" displayProperty="nameWithType"/>
+    {{/definition}}
+    {{^definition}}
+      <xref uid="{{uid}}" altProperty="fullName" displayProperty="nameWithType"/>
+    {{/definition}}
+  </div>
 {{/implements}}
+
 {{#extensionMethods.0}}
-<h3 id="extensionmethods">{{__global.extensionMethods}}</h3>
+  <h3 id="extensionmethods">{{__global.extensionMethods}}</h3>
 {{/extensionMethods.0}}
 {{#extensionMethods}}
-<div class="apt_docgen_push_2 apt_docgen_mono">
-  {{#definition}}
-    <xref uid="{{definition}}" altProperty="fullName" displayProperty="nameWithType"/>
-  {{/definition}}
-  {{^definition}}
-    <xref uid="{{uid}}" altProperty="fullName" displayProperty="nameWithType"/>
-  {{/definition}}
-</div>
+  <div class="apt_docgen_push_2 apt_docgen_mono">
+    {{#definition}}
+      <xref uid="{{definition}}" altProperty="fullName" displayProperty="nameWithType"/>
+    {{/definition}}
+    {{^definition}}
+      <xref uid="{{uid}}" altProperty="fullName" displayProperty="nameWithType"/>
+    {{/definition}}
+  </div>
 {{/extensionMethods}}
+
 {{#seealso.0}}
-<h3 id="seealso">{{__global.seealso}}</h3>
-<div class="seealso apt_docgen_push_2 apt_docgen_mono">
+  <h3 id="seealso">{{__global.seealso}}</h3>
+  <div class="seealso apt_docgen_push_2 apt_docgen_mono">
 {{/seealso.0}}
 {{#seealso}}
   {{#isCref}}
@@ -202,5 +201,5 @@
   {{/isCref}}
 {{/seealso}}
 {{#seealso.0}}
-</div>
+  </div>
 {{/seealso.0}}
